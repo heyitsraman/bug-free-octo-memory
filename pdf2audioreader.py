@@ -9,7 +9,7 @@ total_pages = pdfread.numPages               # Calculating total number of pages
 
 for num in range(0, total_pages):
     page = pdfread.getPage(num)
-    new_voice_rate = 125
+    new_voice_rate = 125                     # Increase/Decrease value to change speed
     text = page.extractText()
     player = pyttsx3.init()
     voices = player.getProperty('voices')
